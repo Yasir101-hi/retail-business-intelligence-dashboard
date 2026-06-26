@@ -170,10 +170,10 @@ Suggested screenshots:
 Example:
 
 ```markdown
-![Executive Overview](images/executive-overview.png)
-![Sales Performance](images/sales-performance.png)
-![Customer Behavior](images/customer-behavior.png)
-![Inventory Operations](images/inventory-operations.png)
+![Executive Overview](images/pg1.png)
+![Sales Performance](images/pg2.png)
+![Customer Behavior](images/pg3.png)
+![Inventory Operations](images/pg4.png)
 ```
 
 ---
