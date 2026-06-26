@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a Business Intelligence case study developed using **Power BI** for a retail business operating in Saudi Arabia.
+This project is a Business Intelligence report developed using Power BI for a retail business operating in Saudi Arabia.
 
 The goal of the project was to transform raw retail sales and operational data into an interactive dashboard that helps management monitor sales performance, understand customer behavior, identify inventory risks, and improve branch-level decision-making.
 
@@ -60,11 +60,11 @@ Key objectives:
 
 The Power BI report includes the following dashboard pages:
 
-| Dashboard Page                  | Purpose                                          |
-| ------------------------------- | ------------------------------------------------ |
-| Executive Overview              | High-level KPI reporting and summary metrics     |
-| Sales Performance Analysis      | Revenue trends and branch performance analysis   |
-| Customer Behavior Analysis      | Customer segmentation and retention insights     |
+| Dashboard Page | Purpose |
+|---|---|
+| Executive Overview | High-level KPI reporting and summary metrics |
+| Sales Performance Analysis | Revenue trends and branch performance analysis |
+| Customer Behavior Analysis | Customer segmentation and retention insights |
 | Inventory & Operations Analysis | Inventory health and operational risk monitoring |
 
 ---
@@ -191,4 +191,4 @@ Data Analyst | Business Intelligence | Energy & Operations Analytics
 
 ## Project Status
 
-Completed. Additional dashboard screenshots and project updates may be added later.
+Completed. Dashboard screenshots, Power BI file, and project report are included in this repository.
