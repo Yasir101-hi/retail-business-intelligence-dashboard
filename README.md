@@ -158,23 +158,17 @@ The dashboard provided management with a centralized view of sales performance, 
 
 ## Dashboard Preview
 
-Add dashboard screenshots here after exporting them from Power BI.
-
-Suggested screenshots:
-
-1. Executive Overview
-2. Sales Performance Analysis
-3. Customer Behavior Analysis
-4. Inventory & Operations Analysis
-
-Example:
-
-```markdown
+### Executive Overview
 ![Executive Overview](images/pg1.png)
-![Sales Performance](images/pg2.png)
-![Customer Behavior](images/pg3.png)
+
+### Sales Performance Analysis
+![Sales Performance Analysis](images/pg2.png)
+
+### Customer Behavior Analysis
+![Customer Behavior Analysis](images/pg3.png)
+
+### Inventory & Operations Analysis
 ![Inventory Operations](images/pg4.png)
-```
 
 ---
 
