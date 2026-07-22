@@ -1,194 +1,160 @@
-# Retail Business Intelligence Dashboard – Saudi Arabia
+# Saudi Retail Business Intelligence Dashboard
 
-## Project Overview
+An end-to-end Power BI solution for monitoring retail revenue, profitability, customer behavior, inventory health, and branch performance in Saudi Arabia.
 
-This project is a Business Intelligence report developed using Power BI for a retail business operating in Saudi Arabia.
+![Executive overview dashboard](images/executive-overview.png)
 
-The goal of the project was to transform raw retail sales and operational data into an interactive dashboard that helps management monitor sales performance, understand customer behavior, identify inventory risks, and improve branch-level decision-making.
+## Executive Snapshot
 
-This dashboard was designed as part of a freelance retail analytics project to provide business owners and managers with clear, actionable insights through executive-level reporting.
-
----
-
-## Business Context
-
-Retail businesses often generate large amounts of daily operational data from sales transactions, branches, products, customers, and inventory movements. However, without a centralized reporting system, it becomes difficult for management to answer key business questions quickly.
-
-The business needed a dashboard that could help answer questions such as:
-
-* Which branches generate the highest revenue?
-* What are the overall sales trends over time?
-* Which products are fast-moving and need better stock monitoring?
-* Are there products at risk of stock shortage?
-* Which customers contribute the most to revenue?
-* How can customer purchasing behavior be segmented?
-* What KPIs should management monitor regularly?
-* Where are the main operational and inventory risks?
-
----
+| KPI | Result |
+|---|---:|
+| Total revenue | **965.79K** |
+| Total profit | **375.35K** |
+| Profit margin | **38.86%** |
+| Total orders | **12K** |
+| Customers | **500** |
+| Returning-customer revenue | **51.9%** |
+| Inventory coverage | **89.38%** |
+| Reorder-required products | **17** |
 
 ## Business Problem
 
-The retail business lacked centralized visibility into sales, customer, inventory, and branch performance. Management faced challenges in tracking KPIs, identifying high-value customers, monitoring low-stock products, and understanding operational performance across branches.
+The business needed one reliable reporting layer for questions that were previously difficult to answer across separate sales, customer, inventory, product, and branch records:
 
-Main challenges included:
+- Which products, categories, and branches drive revenue and profit?
+- How much revenue comes from returning customers?
+- Which customer segments deserve retention attention?
+- Which fast-moving products are approaching a stockout?
+- Where should management prioritize replenishment and inventory review?
 
-* Limited visibility into sales performance across branches
-* Difficulty identifying customer purchasing behavior and retention trends
-* Lack of inventory risk monitoring and reorder visibility
-* No centralized KPI reporting for executive decision-making
-* Operational delays caused by low-stock products and fast-moving item shortages
+## Solution
 
----
+I built a four-page Power BI report that combines executive KPIs with drill-down analysis:
 
-## Project Objectives
+1. **Executive Overview** — revenue, orders, profit, margin, monthly trend, category mix, branches, and top products.
+2. **Sales Performance** — product contribution, branch comparison, category margins, growth, and previous-month revenue.
+3. **Customer Behavior** — customer value, new vs. returning behavior, revenue contribution, and segmentation.
+4. **Inventory & Operations** — stock coverage, reorder signals, fast-moving risk, and low-stock exposure by branch.
 
-The main objective was to build an end-to-end Power BI dashboard that provides clear business insights and supports data-driven decision-making.
+## Key Findings
 
-Key objectives:
+### Sales and profitability
 
-* Build an executive overview dashboard for high-level KPI monitoring
-* Analyze sales performance across branches and time periods
-* Identify customer segments based on purchasing behavior
-* Monitor inventory health and operational risks
-* Highlight fast-moving products and low-stock items
-* Support business owners with actionable recommendations
+- Revenue reached **965.79K**, generating **375.35K** in profit at a **38.86% margin**.
+- Revenue grew **11%** from **870.01K** in the previous month.
+- The **Vape** category produced **418.55K**, or **43.34% of total revenue**, and had the strongest category margin at **43.5%**.
+- **Tabuk** was the top branch at approximately **252.82K**, representing about **26.2% of total revenue**.
+- The top five products generated **249.89K**, approximately **25.9% of total revenue**.
+- Monthly revenue accelerated in November and December, making Q4 the strongest period in the report.
 
----
+### Customer behavior
 
-## Dashboard Pages
+- The dashboard tracks **500 customers** and approximately **1.93K revenue per customer**.
+- Returning customers contributed **501.23K**, or **51.9% of revenue**, compared with **464.56K** from new customers.
+- Customer count remained balanced: **261 new customers (52.2%)** and **239 returning customers (47.8%)**.
+- The value segmentation contains **295 low-value (59.0%)**, **194 medium-value (38.8%)**, and **11 high-value customers (2.2%)**.
 
-The Power BI report includes the following dashboard pages:
+### Inventory and operations
 
-| Dashboard Page | Purpose |
-|---|---|
-| Executive Overview | High-level KPI reporting and summary metrics |
-| Sales Performance Analysis | Revenue trends and branch performance analysis |
-| Customer Behavior Analysis | Customer segmentation and retention insights |
-| Inventory & Operations Analysis | Inventory health and operational risk monitoring |
-
----
-
-## Key Business Questions
-
-### Sales Performance
-
-* What is the total revenue generated?
-* How does revenue change over time?
-* Which branches perform best and worst?
-* Which products contribute most to sales?
-* Are there seasonal or monthly sales patterns?
-
-### Customer Behavior
-
-* Who are the most valuable customers?
-* How can customers be segmented based on purchasing behavior?
-* What percentage of revenue comes from returning customers?
-* Which customer groups should be targeted for retention?
-
-### Inventory & Operations
-
-* Which products are moving fastest?
-* Which products are at risk of stock shortage?
-* Which branches experience inventory pressure?
-* What items require better replenishment planning?
-* How can inventory risks be monitored proactively?
-
-### Management KPIs
-
-* What KPIs should management track daily or weekly?
-* Which areas need operational attention?
-* How can sales, inventory, and customer insights be combined into one decision-making dashboard?
-
----
-
-## Tools & Technologies
-
-* Power BI
-* DAX
-* Power Query
-* Data Modeling
-* Excel / CSV datasets
-* Business Intelligence Reporting
-* Data Visualization
-* KPI Design
-
----
-
-## Key Insights
-
-The dashboard helped identify several important business insights:
-
-* Returning customers contributed significantly to total revenue.
-* Fast-moving products showed higher inventory risk exposure.
-* Branch-level analysis highlighted operational inventory pressure.
-* Customer segmentation helped classify low, medium, and high-value customers.
-* KPI-driven reporting improved operational visibility and supported better decision-making.
-
----
+- Total stock was approximately **18K**, with an average of **110 units per product**.
+- **17 products** reached the reorder threshold while overall inventory coverage remained **89.38%**.
+- **Jeddah** had the highest low-stock exposure with **7 products**, followed by Riyadh and Tabuk with 4 each, and Dammam with 2.
+- Several high-selling products were simultaneously flagged as at risk, creating a direct threat to future revenue if replenishment is delayed.
 
 ## Business Recommendations
 
-Based on the dashboard analysis, the following recommendations were proposed:
+1. Review the 17 reorder-required products weekly and prioritize fast-moving items with the highest revenue contribution.
+2. Investigate Jeddah's inventory allocation and replenishment lead time because it carries the largest low-stock exposure.
+3. Protect availability in the Vape category, which contributes 43.34% of revenue and the strongest category margin.
+4. Build retention campaigns for medium- and high-value customers while tracking returning-customer revenue as a loyalty KPI.
+5. Use branch-level demand and stock risk together when reallocating inventory.
+6. Prepare Q4 inventory earlier to capture the stronger demand observed in November and December.
 
-* Improve inventory replenishment strategies for high-demand products.
-* Monitor fast-moving products more frequently to reduce stock shortage risks.
-* Develop customer retention initiatives for medium and high-value customers.
-* Track branch-level inventory pressure to improve operational planning.
-* Expand executive KPI monitoring to support regular business performance reviews.
-* Use customer segmentation insights to design targeted sales and marketing campaigns.
+## Dashboard Pages
 
----
+### 1. Executive Overview
 
-## Project Outcome
+![Executive overview](images/executive-overview.png)
 
-This project demonstrated how Power BI can be used to transform raw retail data into a practical decision-support tool.
+### 2. Sales Performance
 
-The dashboard provided management with a centralized view of sales performance, customer behavior, inventory risks, and branch operations. It also strengthened practical skills in business intelligence, KPI design, data storytelling, customer analytics, and operational reporting.
+![Sales performance analysis](images/sales-performance.png)
 
----
+### 3. Customer Behavior
 
-## Files Included
+![Customer behavior analysis](images/customer-behavior.png)
 
-* `Sales Project.pbix` – Power BI dashboard file
-* `Saudi_Retail_BI_Dashboard_Report.pdf` – Business intelligence report documenting the project overview, business problem, dashboard structure, key insights, and recommendations
-* `README.md` – Project documentation
+### 4. Inventory & Operations
 
----
+![Inventory and operations analysis](images/inventory-operations.png)
 
-## Dashboard Preview
+## Data Model
 
-### Executive Overview
-![Executive Overview](images/pg1.png)
+The report uses a structured model centered on sales activity, supported by customer, product, branch, calendar, and inventory tables. See the documented [data model and relationship map](docs/data-model.md).
 
-### Sales Performance Analysis
-![Sales Performance Analysis](images/pg2.png)
+```mermaid
+erDiagram
+    CALENDAR ||--o{ SALES : filters
+    CUSTOMERS ||--o{ SALES : places
+    PRODUCTS ||--o{ SALES : contains
+    BRANCHES ||--o{ SALES : records
+    PRODUCTS ||--o{ INVENTORY : stocked_as
+    BRANCHES ||--o{ INVENTORY : holds
+```
 
-### Customer Behavior Analysis
-![Customer Behavior Analysis](images/pg3.png)
+## Measures
 
-### Inventory & Operations Analysis
-![Inventory Operations](images/pg4.png)
+The dashboard uses dedicated measures for revenue, orders, profit, customer behavior, growth, and inventory risk. The [KPI and measure reference](docs/kpi-reference.md) documents the measures verified in the PBIX report and their business purpose.
 
----
+## Tools & Skills Demonstrated
 
-## Confidentiality Note
+- Power BI
+- DAX measures and time-intelligence KPIs
+- Power Query
+- Data modeling
+- Executive KPI design
+- Customer segmentation
+- Sales and profitability analysis
+- Inventory risk monitoring
+- Data storytelling and business recommendations
 
-This project was created for a retail business use case in Saudi Arabia. Any sensitive business or client information has been anonymized or excluded to protect confidentiality.
+## Repository Structure
 
----
+```text
+retail-business-intelligence-dashboard/
+├── README.md
+├── Saudi_Retail_BI_Dashboard.pbix
+├── Saudi_Retail_BI_Dashboard_Report.pdf
+├── docs/
+│   ├── data-model.md
+│   └── kpi-reference.md
+└── images/
+    ├── executive-overview.png
+    ├── sales-performance.png
+    ├── customer-behavior.png
+    └── inventory-operations.png
+```
+
+## How to Review the Project
+
+1. Read the executive snapshot and key findings above.
+2. Review the four dashboard screenshots.
+3. Open the PDF for the complete management-facing report.
+4. Open `Saudi_Retail_BI_Dashboard.pbix` in Power BI Desktop for interactive filtering and model inspection.
+
+## Data Quality & Confidentiality
+
+Client and store identifiers are anonymized. Product names are generic where necessary, and sensitive operational details are excluded. The PBIX is provided for portfolio review; the underlying model and dashboard logic remain available for inspection in Power BI Desktop.
+
+## Important Validation Note
+
+All figures in this README were transcribed or calculated from the dashboard outputs included in this repository. Percentages derived from displayed totals are rounded to one decimal place.
 
 ## Author
 
-**Yasir Awad**
+**Yasir Awad**  
 Data Analyst | Business Intelligence | Energy & Operations Analytics
 
-* LinkedIn: https://www.linkedin.com/in/yasirawad
-* GitHub: https://github.com/Yasir101-hi
-* Email: [yasir.petro.analytics@outlook.com](mailto:yasir.petro.analytics@outlook.com)
-
----
-
-## Project Status
-
-Completed. Dashboard screenshots, Power BI file, and project report are included in this repository.
+- [GitHub](https://github.com/Yasir101-hi)
+- [LinkedIn](https://www.linkedin.com/in/yasirawad)
+- Email: `yasir.petro.analytics@outlook.com`
