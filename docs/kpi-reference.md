@@ -10,8 +10,8 @@ The following measures were verified from the PBIX report metadata. Definitions 
 | `Total Orders` | Number of orders in the selected filter context | 12K |
 | `Total Profit` | Revenue less recorded cost | 375.35K |
 | `Profit Margin` | Profit as a percentage of revenue | 38.86% |
-| `Previous Month Revenue` | Revenue for the prior month | 870.01K |
-| `Revenue Growth %` | Change from previous-month revenue | 11% |
+| `Prior Period Revenue` | Comparison-period revenue in the current report context | 870.01K |
+| `Revenue Growth %` | Change from the prior comparison period | 11% |
 | `Top Branch` | Highest-revenue branch in the current context | Tabuk |
 | `Top Category` | Highest-revenue product category | Vape |
 
@@ -48,3 +48,4 @@ The following measures were verified from the PBIX report metadata. Definitions 
 
 The earlier report stated that the top three products generated more than 30% of sales. The dashboard values do not support that statement: the top three displayed products total approximately 159.49K, or 16.5% of revenue. This repository now uses the supported top-five concentration figure of approximately 25.9%.
 
+The earlier visual label `Previous Month Revenue` was also too specific for the displayed 870.01K comparison value. The presentation label is now `Prior Period Revenue`; the stored measure name remains unchanged so the semantic model and DAX dependencies are not altered.

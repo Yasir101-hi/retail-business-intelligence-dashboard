@@ -32,7 +32,7 @@ The business needed one reliable reporting layer for questions that were previou
 I built a four-page Power BI report that combines executive KPIs with drill-down analysis:
 
 1. **Executive Overview** — revenue, orders, profit, margin, monthly trend, category mix, branches, and top products.
-2. **Sales Performance** — product contribution, branch comparison, category margins, growth, and previous-month revenue.
+2. **Sales Performance** — product contribution, branch comparison, category margins, growth, and prior-period revenue.
 3. **Customer Behavior** — customer value, new vs. returning behavior, revenue contribution, and segmentation.
 4. **Inventory & Operations** — stock coverage, reorder signals, fast-moving risk, and low-stock exposure by branch.
 
@@ -41,7 +41,7 @@ I built a four-page Power BI report that combines executive KPIs with drill-down
 ### Sales and profitability
 
 - Revenue reached **965.79K**, generating **375.35K** in profit at a **38.86% margin**.
-- Revenue grew **11%** from **870.01K** in the previous month.
+- Revenue in the current report context is **11%** above the **870.01K** prior-period comparison baseline.
 - The **Vape** category produced **418.55K**, or **43.34% of total revenue**, and had the strongest category margin at **43.5%**.
 - **Tabuk** was the top branch at approximately **252.82K**, representing about **26.2% of total revenue**.
 - The top five products generated **249.89K**, approximately **25.9% of total revenue**.
@@ -128,11 +128,14 @@ retail-business-intelligence-dashboard/
 ├── docs/
 │   ├── data-model.md
 │   └── kpi-reference.md
-└── images/
+├── images/
     ├── executive-overview.png
     ├── sales-performance.png
     ├── customer-behavior.png
     └── inventory-operations.png
+└── tools/
+    ├── build_report.py
+    └── repair_dashboard_layout.py
 ```
 
 ## How to Review the Project
@@ -148,7 +151,7 @@ Client and store identifiers are anonymized. Product names are generic where nec
 
 ## Important Validation Note
 
-All figures in this README were transcribed or calculated from the dashboard outputs included in this repository. Percentages derived from displayed totals are rounded to one decimal place.
+All figures in this README were transcribed or calculated from the dashboard outputs included in this repository. Percentages derived from displayed totals are rounded to one decimal place. The earlier `Previous Month Revenue` display label was changed to `Prior Period Revenue` because the report value represents a comparison baseline in the current filter context rather than a standalone monthly total.
 
 ## Author
 
